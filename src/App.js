@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './App.css'
 import { Auth } from 'aws-amplify'
 import { AmplifySignOut, withAuthenticator } from '@aws-amplify/ui-react'
+import Img from './Img'
 
 function App() {
   const [user, setUser] = useState(null)
@@ -33,6 +34,7 @@ function App() {
         <h1>Howdy</h1>
         {isAdmin && <p>Welcome, Admin</p>}
       </header>
+      <Img />
       <AmplifySignOut />
     </div>
   )

@@ -4,6 +4,11 @@
 			"build": true,
 			"providerPlugin": "awscloudformation",
 			"service": "Lambda"
+		},
+		"S3Triggeradf0e13e": {
+			"service": "Lambda",
+			"providerPlugin": "awscloudformation",
+			"build": true
 		}
 	},
 	"auth": {
@@ -18,6 +23,23 @@
 					"attributes": [
 						"Arn",
 						"Name"
+					]
+				}
+			]
+		}
+	},
+	"storage": {
+		"resizeimg": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [
+				{
+					"category": "function",
+					"resourceName": "S3Triggeradf0e13e",
+					"attributes": [
+						"Name",
+						"Arn",
+						"LambdaExecutionRole"
 					]
 				}
 			]

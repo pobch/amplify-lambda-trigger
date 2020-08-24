@@ -1,6 +1,6 @@
 {
     "identityPoolName": "amplifylambdatrigger2fe809a3_identitypool_2fe809a3",
-    "allowUnauthenticatedIdentities": false,
+    "allowUnauthenticatedIdentities": true,
     "resourceNameTruncated": "amplif2fe809a3",
     "userPoolName": "amplifylambdatrigger2fe809a3_userpool_2fe809a3",
     "autoVerifiedAttributes": [
